@@ -1,0 +1,9 @@
+# ProjetoCmFormaDePg
+
+// 1 Credito | 2 Debito | 3 Crediario
+
+		String formaPagamento = "Debito";
+		double saldoCliente = 1784.34;
+		int qtd = 2;
+		int valorProduto = 230;
+		int valorCompra = (qtd * valorProduto);
