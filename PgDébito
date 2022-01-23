@@ -1,0 +1,19 @@
+# ProjetoCmFormaDePg
+
+
+		} else if (formaPagamento.equalsIgnoreCase("Debito")) {
+
+			System.out.println("Forma de pagamento: Debito");
+			valorCompra = valorCompra - (valorCompra * 15) / 100;
+			System.out.println("Valor compra com desconto: R$ " + valorCompra);
+
+			if (saldoCliente >= valorCompra) {
+
+				System.out.println("Compra realizada com sucesso: R$ " + valorCompra);
+				saldoCliente = saldoCliente - valorCompra;
+				System.out.println("Saldo: " + saldoCliente);
+
+			} else {
+				System.out.println("Compra não autorizada.");
+				System.out.println("Saldo insuficiente: R$ " + saldoCliente);
+			}
