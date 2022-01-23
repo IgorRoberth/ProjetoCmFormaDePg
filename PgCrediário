@@ -1,0 +1,25 @@
+  # ProjetoCmFormaDePg
+  
+  		} else if (formaPagamento.equalsIgnoreCase("Crediario")) {
+
+			System.out.println("Forma de Pagamento: Crediario");
+			int juros = 300;
+			int aut = valorCompra + juros;
+			System.out.println("Saldo: " + saldoCliente);
+
+			if (saldoCliente >= aut) {
+
+				saldoCliente = saldoCliente - aut;
+				System.out.println("Compra realizada com sucesso: R$ " + aut);
+				System.out.println("Saldo: " + saldoCliente);
+
+			} else {
+				System.out.println("Compra não autorizada.");
+				System.out.println("Saldo insuficiente: R$" + saldoCliente);
+			}
+		} else {
+			System.out.println("Opção invalida.");
+
+		}
+	}
+}
