@@ -1,0 +1,16 @@
+# ProjetoCmFormaDePg
+
+if (formaPagamento.equalsIgnoreCase("Credito")) {
+			System.out.println("Forma de Pagamento: Credito");
+			valorCompra = ((valorCompra * 15) / 100 + valorCompra);
+			System.out.println("Valor da compra com juros: R$ " + valorCompra);
+
+			if (saldoCliente >= valorCompra) {
+
+				System.out.println("\nCompra realizada com sucesso: R$ " + valorCompra);
+				saldoCliente = saldoCliente - valorCompra;
+				System.out.println("Saldo: R$" + saldoCliente);
+			} else {
+				System.out.println("\nCompra não autorizada, saldo insuficiente");
+				System.out.println("Saldo: R$" + saldoCliente);
+			}
